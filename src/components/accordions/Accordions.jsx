@@ -7,13 +7,14 @@ const NO_ACCORDION_SELECTED = 0;
 const Accordions = () => {
   const [active, setActive] = useState(NO_ACCORDION_SELECTED);
 
-  const handleClick = (index) => {
+  const onMouseEnter = (index) => {
     if (index === active) {
       setActive(NO_ACCORDION_SELECTED);
       return;
     }
     setActive(index);
   };
+  
 
   return (
     <div className="accordions">
@@ -22,7 +23,7 @@ const Accordions = () => {
       <Accordion
         value={1}
         active={active}
-        onClick={handleClick}
+        onMouseOver={onMouseEnter}
         title="Bulbizarre"
        
       >
@@ -44,7 +45,7 @@ const Accordions = () => {
       <Accordion
         value={2}
         active={active}
-        onClick={handleClick}
+        onMouseOver={onMouseEnter}
         title="Herbizarre"
       >
       <div className="card">
@@ -63,7 +64,7 @@ const Accordions = () => {
       <Accordion
         value={3}
         active={active}
-        onClick={handleClick}
+        onMouseOver={onMouseEnter}
         title="FLORIZARRE"
       >
         <div className="card">
@@ -82,7 +83,7 @@ const Accordions = () => {
       <Accordion
         value={4}
         active={active}
-        onClick={handleClick}
+        onMouseOver={onMouseEnter}
         title="SALAMECHE"
       >
          <div className="card">
@@ -101,7 +102,7 @@ const Accordions = () => {
       <Accordion
         value={5}
         active={active}
-        onClick={handleClick}
+        onMouseOver={onMouseEnter}
         title="REPTINCEL"
       >
         <div className="card">
@@ -120,7 +121,7 @@ const Accordions = () => {
       <Accordion
         value={6}
         active={active}
-        onClick={handleClick}
+        onMouseOver={onMouseEnter}
         title="DRACOFEU"
       >
         <div className="card">
@@ -139,7 +140,7 @@ const Accordions = () => {
       <Accordion
         value={7}
         active={active}
-        onClick={handleClick}
+        onMouseOver={onMouseEnter}
         title="CARAPUCE"
       >
          <div className="card">
@@ -158,7 +159,7 @@ const Accordions = () => {
       <Accordion
         value={8}
         active={active}
-        onClick={handleClick}
+        onMouseOver={onMouseEnter}
         title="CARABAFFE"
       >
          <div className="card">
@@ -177,7 +178,7 @@ const Accordions = () => {
       <Accordion
         value={9}
         active={active}
-        onClick={handleClick}
+        onMouseOver={onMouseEnter}
         title="TORTEGA"
       >
         <div className="card">
@@ -195,7 +196,7 @@ const Accordions = () => {
       <Accordion
         value={10}
         active={active}
-        onClick={handleClick}
+        onMouseOver={onMouseEnter}
         title="CHENIPAN"
       >
          <div className="card">

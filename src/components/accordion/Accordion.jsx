@@ -8,15 +8,15 @@ const Accordion = (props) => {
     classnames.push("active");
   }
 
-  const onClick = () => {
-    props.onClick(props.value);
+  const onMouseOver = () => {
+    props.onMouseOver(props.value);
   };
 
   return (
-    <div onClick={onClick} className={classnames.join(" ")}>
-      <button onClick={onClick} className="accordion__button">
+    <div onMouseOver={onMouseOver} className={classnames.join(" ")}>
+      <div onMouseOver={onMouseOver} className="accordion__button">
         {props.title}
-      </button>
+      </div>
       <div className="accordion__content">{props.children}</div>
     </div>
   );
