@@ -4,11 +4,13 @@ import Accordions from "./components/accordions/Accordions";
 
 function App() {
   return (
+  <section>
     <Container fluid className="my-5">
-      <Container>
+      <Container >
         <Accordions />
       </Container>
     </Container>
+  </section>
   );
 }
 
