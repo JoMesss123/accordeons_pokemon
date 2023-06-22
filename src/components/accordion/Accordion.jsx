@@ -8,13 +8,13 @@ const Accordion = (props) => {
     classnames.push("active");
   }
 
-  const onMouseOver = () => {
-    props.onMouseOver(props.value);
+  const onMouseEnter = () => {
+    props.onMouseEnter(props.value);
   };
 
   return (
-    <div onMouseOver={onMouseOver} className={classnames.join(" ")}>
-      <div onMouseOver={onMouseOver} className="accordion__button">
+    <div onMouseEnter={onMouseEnter} className={classnames.join(" ")}>
+      <div onMouseEnter={onMouseEnter} className="accordion__button">
         {props.title}
       </div>
       <div className="accordion__content">{props.children}</div>

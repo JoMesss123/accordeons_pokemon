@@ -7,7 +7,7 @@ const NO_ACCORDION_SELECTED = 0;
 const Accordions = () => {
   const [active, setActive] = useState(NO_ACCORDION_SELECTED);
 
-  const onMouseEnter = (index) => {
+  const handleEnter = (index) => {
     if (index === active) {
       setActive(NO_ACCORDION_SELECTED);
       return;
@@ -23,7 +23,7 @@ const Accordions = () => {
       <Accordion
         value={1}
         active={active}
-        onMouseOver={onMouseEnter}
+        onMouseEnter={handleEnter}
         title="Bulbizarre"
        
       >
@@ -45,7 +45,7 @@ const Accordions = () => {
       <Accordion
         value={2}
         active={active}
-        onMouseOver={onMouseEnter}
+        onMouseEnter={handleEnter}
         title="Herbizarre"
       >
       <div className="card">
@@ -64,7 +64,7 @@ const Accordions = () => {
       <Accordion
         value={3}
         active={active}
-        onMouseOver={onMouseEnter}
+        onMouseEnter={handleEnter}
         title="FLORIZARRE"
       >
         <div className="card">
@@ -83,7 +83,7 @@ const Accordions = () => {
       <Accordion
         value={4}
         active={active}
-        onMouseOver={onMouseEnter}
+        onMouseEnter={handleEnter}
         title="SALAMECHE"
       >
          <div className="card">
@@ -102,7 +102,7 @@ const Accordions = () => {
       <Accordion
         value={5}
         active={active}
-        onMouseOver={onMouseEnter}
+        onMouseEnter={handleEnter}
         title="REPTINCEL"
       >
         <div className="card">
@@ -121,7 +121,7 @@ const Accordions = () => {
       <Accordion
         value={6}
         active={active}
-        onMouseOver={onMouseEnter}
+        onMouseEnter={handleEnter}
         title="DRACOFEU"
       >
         <div className="card">
@@ -140,7 +140,7 @@ const Accordions = () => {
       <Accordion
         value={7}
         active={active}
-        onMouseOver={onMouseEnter}
+        onMouseEnter={handleEnter}
         title="CARAPUCE"
       >
          <div className="card">
@@ -159,7 +159,7 @@ const Accordions = () => {
       <Accordion
         value={8}
         active={active}
-        onMouseOver={onMouseEnter}
+        onMouseEnter={handleEnter}
         title="CARABAFFE"
       >
          <div className="card">
@@ -178,7 +178,7 @@ const Accordions = () => {
       <Accordion
         value={9}
         active={active}
-        onMouseOver={onMouseEnter}
+        onMouseEnter={handleEnter}
         title="TORTEGA"
       >
         <div className="card">
@@ -196,7 +196,7 @@ const Accordions = () => {
       <Accordion
         value={10}
         active={active}
-        onMouseOver={onMouseEnter}
+        onMouseEnter={handleEnter}
         title="CHENIPAN"
       >
          <div className="card">
